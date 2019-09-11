@@ -5,6 +5,7 @@
 - E-mail: <mv2.mx@yandex.ru>;
 - Skype:  vitya_mitskevich;
 - Telegram: @MV125;
+- Linkedin: [Link](www.linkedin.com/in/victormitskevich "Linkedin profile")
 
 ### Summary: ###
 >My main goal at the moment is to learn newest technologies and tools for working as a developer.  As a junior web developer i'm ready to compete, work overtime, work on mistakes and learn from expirience.
