@@ -1,0 +1,89 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+header, main, footer {
+  width: 100%;
+  max-width: 1400px;
+  background-color: #fff;
+}
+
+.nav-container {
+  display: flex;
+  height: 70px;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav-container h1 {
+  width: 51%;
+  padding-left: 3%;
+}
+
+nav ul{
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul a {
+  display: block;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  padding: 26px 45px;
+}
+
+nav ul a:hover {
+  border-bottom: 1px solid #333;
+}
+
+.header-container {
+  display: flex;
+  height: 700px;
+}
+
+.header-container__text, .header-container__photo {
+  width: 50%;
+}
+
+.header-container__text {
+  padding-top: 20%;
+  padding-left: 10%;
+}
+
+.header-container__text p:first-child, h2 {
+  text-transform: uppercase;
+}
+
+.header-container__button {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-top: 5%;
+}
+
+.header-container__button:active, button:focus {
+  outline: none;
+}
+
+.header-container__button:hover {
+  background-color: #000;
+  color: white;
+}
+
+.header-container__photo img {
+  width: 70%;
+  padding-top: 25%;
+}
