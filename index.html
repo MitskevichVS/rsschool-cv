@@ -123,20 +123,32 @@
         <div class="main__title-container">
           <h5 class="main__title">Portfolio</h5>
         </div>
-        <ul class="main-portfolio__list">
-          <li class="main-portfolio__listitem">
-            <img src="./assets/img/Neutron-mail.png" alt="portfolio_img">
-          </li>
-          <li class="main-portfolio__listitem">
-            <img src="./assets/img/chat - Imgur.png" alt="portfolio_img">
-          </li>
-          <li class="main-portfolio__listitem">
-            <img src="./assets/img/piskel-clone.png" alt="portfolio_img">
-          </li>
-          <li class="main-portfolio__listitem">
-            <img src="./assets/img/smallweatherapp.png" alt="portfolio_img">
-          </li>
-        </ul>
+        <div class="main-portfolio__slider">
+          <input type="radio" id="one" name="slide">
+          <input type="radio" id="two" name="slide">
+          <input type="radio" id="three" name="slide" checked>
+          <input type="radio" id="four" name="slide">
+          <div class="main-portfolio__list">
+            <div class="main-portfolio__listitem slides slide1">
+              <img src="./assets/img/Neutron-mail.png" alt="portfolio_img">
+            </div>
+            <div class="main-portfolio__listitem slides slide2">
+              <img src="./assets/img/chat - Imgur.png" alt="portfolio_img">
+            </div>
+            <div class="main-portfolio__listitem slides slide3">
+              <img src="./assets/img/piskel-clone.png" alt="portfolio_img">
+            </div>
+            <div class="main-portfolio__listitem slides slide4">
+              <img src="./assets/img/smallweatherapp.png" alt="portfolio_img">
+            </div>
+          </div>
+          <div class="controls">
+            <label for="one"></label>
+            <label for="two"></label>
+            <label for="three"></label>
+            <label for="four"></label>
+          </div>
+        </div>
       </section>
       <section class="main-contacts" id="contacts">
         <div class="main__title-container">

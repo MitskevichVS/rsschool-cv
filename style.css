@@ -144,7 +144,7 @@ nav ul a:hover {
 
 .main-about, .main-portfolio {
   width: 100%;
-  padding-bottom: 5%;
+  padding-bottom: 6%;
   background-color: #f5f5f5;
 }
 
@@ -223,15 +223,29 @@ nav ul a:hover {
 /*Portfolio section*/
 
 .main-portfolio__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 1vw;
+  position: relative;
+  height: 100%;
   padding: 1vw 2%;
   margin: 0 0; 
 }
 
+.main-portfolio__slider {
+  height: 350px;
+}
+
 .main-portfolio__listitem {
-  list-style-type: none;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 45%;
+  height: 350px;
+  transition: all 0.3s ease-in-out;
+}
+
+.slides {
+  opacity: 0;
 }
 
 .main-portfolio__listitem img{
@@ -240,7 +254,46 @@ nav ul a:hover {
   height: 100%;
 }
 
+.main-portfolio__slider > input {
+	display: none;
+}
+
+.main-portfolio__slider > .controls {
+  display: flex;
+  justify-content: center;
+} 
+
+.main-portfolio__slider label {
+	cursor: pointer;
+	height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 1px solid #4d4d4d;
+  background-color: #fff;
+  margin: 5px;
+}
+
+.main-portfolio__slider label:after {
+	background-color: #4d4d4d;
+}
+
+.main-portfolio__slider label:hover,
+#one:checked ~ .controls label:nth-of-type(1),
+#two:checked ~ .controls label:nth-of-type(2),
+#three:checked ~ .controls label:nth-of-type(3),
+#four:checked ~ .controls label:nth-of-type(4) {
+	background-color: #4d4d4d;
+}
+
+#one:checked ~ * .slide1,
+#two:checked ~ * .slide2,
+#three:checked ~ * .slide3,
+#four:checked ~ * .slide4 {
+	opacity: 1;
+}
+
 /*Contact form*/
+
 form {
   display: flex;
   flex-direction: column;
@@ -272,11 +325,12 @@ textarea {
   max-width: 732px;
   height: 100px;
   max-height: 150px;
-  padding: 10px 15px 10px 15px;
+  padding: 20px 15px 10px 15px;
   font-size: 0.875em;
   border: none;
   border-bottom: solid 1px #ddd;
   transition: all 0.3s ease-in-out;
+  outline: none;
 }
 
 textarea:hover {
@@ -289,7 +343,7 @@ textarea:hover::-webkit-input-placeholder {
 
 #submit {
   width: 52%;
-  padding: 10px 15px 10px 15px;
+  padding: 20px 15px 10px 15px;
   cursor: pointer;
   border: none;
   border-bottom: solid 1px #ccc;
