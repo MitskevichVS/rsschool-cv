@@ -10,13 +10,13 @@ main,
 footer {
 	width: 100%;
 	max-width: 1024px;
-	background-color: #fff;
+	background-color: #ffffff;
 }
 
 .nav-container {
 	display: flex;
 	height: 70px;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #cccccc;
 }
 
 .nav-container h1 {
@@ -26,18 +26,18 @@ footer {
 
 .header-nav__list {
 	display: flex;
-	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+	list-style-type: none;
 }
 
 .header-nav__list a {
 	display: block;
-	color: #000;
+	padding: 26px 45px;
 	text-align: center;
 	text-decoration: none;
-	padding: 26px 45px;
+	color: #000000;
 }
 
 .header-nav__list a:hover {
@@ -64,22 +64,22 @@ footer {
 
 .header-container__text p:first-child,
 h2 {
-	text-transform: uppercase;
 	font-weight: 600;
+	text-transform: uppercase;
 }
 
 .header-container__button {
-	background-color: #fff;
-	border: 2px solid #000;
+	display: inline-block;
+	padding: 15px 32px;
+	margin-top: 5%;
+	text-align: center;
+	text-decoration: none;
+	color: #000000;
+	font-size: 16px;
+	background-color: #ffffff;
+	border: 2px solid #000000;
 	transition-duration: 0.4s;
 	cursor: pointer;
-	margin-top: 5%;
-	text-decoration: none;
-	color: #000;
-	font-size: 16px;
-	text-align: center;
-	padding: 15px 32px;
-	display: inline-block;
 }
 
 .header-container__button:active,
@@ -88,8 +88,8 @@ button:focus {
 }
 
 .header-container__button:hover {
-	background-color: #000;
-	color: #fff;
+	color: #ffffff;
+	background-color: #000000;
 }
 
 .header-container__photo img {
@@ -98,24 +98,24 @@ button:focus {
 }
 
 .header-contact {
-	border-top: 1px solid #ccc;
+	border-top: 1px solid #cccccc;
 }
 
 .header-contact__list {
 	display: flex;
-	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+	list-style-type: none;
 }
 
 .header-contact__list-item {
 	display: block;
-	color: #000;
-	text-align: left;
-	text-decoration: none;
 	width: 25%;
 	padding: 25px 0 25px 6%;
+	text-align: left;
+	text-decoration: none;
+	color: #000000;
 }
 
 .header-contact__list-item p {
@@ -133,15 +133,16 @@ button:focus {
 
 .header-contact__list-item a {
 	text-decoration: none;
-	color: #000;
+	color: #000000;
 	font-weight: 600;
 }
-
 
 /*About section*/
 
 h3 {
-	display: none;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .main-about,
@@ -158,13 +159,13 @@ h3 {
 
 .main__title-container:before,
 .main__title-container:after {
-	content: "";
 	display: inline-block;
-	vertical-align: middle;
 	width: 100%;
 	height: 1px;
-	background-color: #ccc;
 	position: relative;
+	vertical-align: middle;
+	content: "";
+	background-color: #cccccc;
 }
 
 .main__title-container:before {
@@ -178,9 +179,9 @@ h3 {
 }
 
 .main__title {
+	display: inline-block;
 	margin: 0 0;
 	padding: 4% 0;
-	display: inline-block;
 	vertical-align: middle;
 	text-transform: uppercase;
 	font-size: 1.7em;
@@ -188,19 +189,19 @@ h3 {
 }
 
 .main-about__list {
-	width: 100%;
 	display: flex;
+	width: 100%;
 	margin: 0 0;
 	padding: 0 0;
 }
 
 .main-about__listitem {
 	display: block;
-	color: #000;
-	text-align: left;
-	text-decoration: none;
 	width: 25%;
 	padding: 15px 5%;
+	color: #000000;
+	text-align: left;
+	text-decoration: none;
 }
 
 .main-about__listitem p {
@@ -208,7 +209,6 @@ h3 {
 	line-height: 1.8em;
 	font-weight: 500;
 }
-
 
 /*Tech section*/
 
@@ -225,7 +225,6 @@ h3 {
 	display: grid;
 	grid-template-columns: 3fr 10fr;
 }
-
 
 /*Portfolio section*/
 
@@ -271,13 +270,13 @@ h3 {
 }
 
 .main-portfolio__slider label {
-	cursor: pointer;
-	height: 15px;
 	width: 15px;
+	height: 15px;
+	margin: 5px;
 	border-radius: 50%;
 	border: 1px solid #4d4d4d;
-	background-color: #fff;
-	margin: 5px;
+	background-color: #ffffff;
+	cursor: pointer;
 }
 
 .main-portfolio__slider label:after {
@@ -299,7 +298,6 @@ h3 {
 	opacity: 1;
 }
 
-
 /*Contact form*/
 
 form {
@@ -311,17 +309,17 @@ form {
 
 input {
 	width: 50%;
+	padding: 20px 15px 10px 15px;
 	font-size: 0.875em;
-	background-color: #fff;
+	background-color: #ffffff;
 	outline: none;
 	border: none;
-	border-bottom: solid 1px #ccc;
-	padding: 20px 15px 10px 15px;
+	border-bottom: solid 1px #cccccc;
 	transition: all 0.3s ease-in-out;
 }
 
 input:hover::placeholder {
-	color: #fff;
+	color: #ffffff;
 }
 
 input:hover {
@@ -346,7 +344,7 @@ textarea:hover {
 }
 
 textarea:hover::placeholder {
-	color: #fff;
+	color: #ffffff;
 }
 
 #submit {
@@ -354,35 +352,34 @@ textarea:hover::placeholder {
 	padding: 20px 15px 10px 15px;
 	cursor: pointer;
 	border: none;
-	border-bottom: solid 1px #ccc;
+	border-bottom: solid 1px #cccccc;
 	margin-bottom: 5%;
 	color: #808080;
 }
 
 #submit:hover {
 	background: #e8e8e8;
-	color: #fff;
+	color: #ffffff;
 }
-
 
 /*footer*/
 
 .footer-container {
-	background-color: #f5f5f5;
 	width: 100%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	background-color: #f5f5f5;
 }
 
 .footer-container__socials-list {
-	list-style-type: none;
-	padding: 2% 0 0 0;
-	margin: 0 0;
 	display: flex;
-	align-items: center;
 	width: 15%;
+	margin: 0 0;
+	padding: 2% 0 0 0;
+	align-items: center;
+	list-style-type: none;
 }
 
 .footer-container__socials-listitem {
@@ -391,16 +388,16 @@ textarea:hover::placeholder {
 
 .footer-container__socials-listitem a {
 	text-decoration: none;
-	color: #ccc;
+	color: #cccccc;
 }
 
 .footer-container__socials-listitem a:hover {
-	color: #000;
+	color: #000000;
 }
 
 .footer-container__copy {
 	font-size: 0.8em;
-	color: #ccc;
+	color: #cccccc;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -426,8 +423,8 @@ textarea:hover::placeholder {
 @media only screen and (max-width: 425px) {
   .nav-container h1 {
     width: 100%;
-    text-align: center;
     padding: 0 0;
+    text-align: center;
   }
   
   .nav-container {
